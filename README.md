@@ -14,6 +14,8 @@ The original nmap-python library lacks quite a few features that users will ofte
 - Session Resume
 - Bulk Scans
 - Data Serialization
+- Easy exports
+- Report generation
 - Ease of integration with codebases and workflows
 - Function-centric approach 
 - Data generation based on target info
@@ -33,3 +35,9 @@ from portsploit.serializers import to_csv, to_json, to_pickle, to_yml # For seri
 ```python
 session = portsploit.ScannerSession()
 ```
+
+## Dependencies
+
+1. **NMap:** Famous port scanner
+2. **nmap-python:** Python library for introducing NMap into Python programs
+3. **rich:** For text formatting in the Command Line
