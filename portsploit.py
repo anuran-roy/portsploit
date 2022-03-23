@@ -64,27 +64,8 @@ class ScannerSession:
     async def bulk_scan(self, targets: List[str] = [], *args, **kwargs):
         pass
 
-class GenerateData:
-    def __init__(self):
+    async def serialize(self, data, format="json"):
         pass
-
-    def generate_ips(
-        self,
-        start: str = "",
-        end: str = "",
-        constraints={
-            "port": {"gt": None, "lt": None, "eq": None},
-            "address": {"gt": None, "lt": None, "eq": None},
-        },
-    ):
-        pass
-
-    def generate_hosts(
-        self,
-        start: str = "",
-        end: str = "",
-        constraints={
-            "names": {"regex": None},
-        },
-    ):
+    
+    async def save_session(self):
         pass
